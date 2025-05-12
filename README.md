@@ -1,4 +1,16 @@
-# Pokémon Polished Crystal
+# Pokémon Polished Crystal - The Unown King Addon
+
+This is a modification of Polished Crystal that adds the Unown King from the classic creepypasta "Curse of the Unown King" into the game. Not alot has changed besides the new custom Pokémon, a new signature move and a new custom event in the Ruins of Alph.
+
+This is my first time doing ROM Hacking with the Pokecrystal disassembly, so it's not gonna be that impressive. However, I might update this from time to time if I get the motivation. But regardless, be prepared, though... *He* is waiting for you...
+
+*(Note: This is on the unreleased 3.2.0 update, not 3.1.1.)*
+
+![the-statue](screenshots/thestatue.jpg)
+![unown-king](screenshots/unownkingencounter.jpg)
+
+---------------
+The original ReadMe from Polished Crystal ( https://github.com/Rangi42/polishedcrystal ):
 
 This is a custom Pokémon game based on [the Pokémon Crystal disassembly](https://github.com/pret/pokecrystal).
 
