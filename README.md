@@ -6,6 +6,9 @@ This is my first time doing ROM Hacking with the Pokecrystal disassembly, so it'
 
 *(Note: This is on the unreleased 3.2.0 update, not 3.1.1.)*
 
+![the-statue](screenshots/thestatue.jpg)
+![unown-king](screenshots/unownkingencounter.jpg)
+
 ---------------
 The original ReadMe from Polished Crystal ( https://github.com/Rangi42/polishedcrystal ):
 
