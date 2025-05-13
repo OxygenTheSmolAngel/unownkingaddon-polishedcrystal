@@ -26,7 +26,6 @@ TrainerPicPointers::
 	dba BlainePic
 	dba BluePic
 	dba RedPic
-	dba OxygenPic
 	dba LeafPic
 	dba Rival0Pic
 	dba Rival1Pic

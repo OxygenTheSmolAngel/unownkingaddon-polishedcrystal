@@ -28,7 +28,6 @@ TrainerGroups:
 	dba BlaineGroup
 	dba BlueGroup
 	dba RedGroup
-	dba OxygenGroup
 	dba LeafGroup
 	dba Rival0Group
 	dba Rival1Group

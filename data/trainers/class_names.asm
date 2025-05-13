@@ -25,7 +25,6 @@ TrainerClassNames::
 	li "Leader"           ; BLAINE
 	li "Leader"           ; BLUE
 	li "<PK><MN> Trainer" ; RED
-	li "Reverie"          ; OXYGEN
 	li "<PK><MN> Trainer" ; LEAF
 	li "Strange"          ; RIVAL0
 	li "Rival"            ; RIVAL1

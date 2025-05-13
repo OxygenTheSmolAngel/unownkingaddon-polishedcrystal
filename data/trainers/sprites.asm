@@ -26,7 +26,6 @@ BTTrainerClassSprites:
 	db SPRITE_BLAINE        ; BLAINE
 	db SPRITE_BLUE          ; BLUE
 	db SPRITE_RED           ; RED
-	db SPRITE_KRIS          ; OXYGEN
 	db SPRITE_LEAF          ; LEAF
 	db SPRITE_RIVAL         ; RIVAL0
 	db SPRITE_RIVAL         ; RIVAL1

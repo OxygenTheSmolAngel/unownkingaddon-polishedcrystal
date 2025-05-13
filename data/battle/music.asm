@@ -11,7 +11,6 @@ BattleMusic_Trainers:
 	db CHAMPION,         MUSIC_CHAMPION_BATTLE
 	db RED,              MUSIC_WCS_BATTLE_BW
 	db LEAF,             MUSIC_CHAMPION_BATTLE_B2W2
-	db OXYGEN,           MUSIC_CHAMPION_BATTLE_B2W2
 	db RIVAL0,           MUSIC_RIVAL_BATTLE
 	db RIVAL1,           MUSIC_RIVAL_BATTLE
 	db RIVAL2,           MUSIC_RIVAL_BATTLE

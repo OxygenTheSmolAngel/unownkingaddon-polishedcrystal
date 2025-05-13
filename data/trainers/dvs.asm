@@ -28,7 +28,6 @@ TrainerClassDVsAndPersonality:
 	db 252, PERFECT_DVS,   MALE   ; blaine
 	db 252, PERFECT_DVS,   MALE   ; blue
 	db 252, PERFECT_DVS,   MALE   ; red
-	db 252, PERFECT_DVS,   MALE   ; oxygen
 	db 252, PERFECT_DVS,   FEMALE ; leaf
 	db   0, PERFECT_DVS,   MALE   ; rival0
 	db 144, PERFECT_DVS,   MALE   ; rival1
