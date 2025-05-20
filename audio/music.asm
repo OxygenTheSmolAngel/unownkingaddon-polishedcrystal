@@ -565,4 +565,19 @@ INCLUDE "audio/music/m02/lugiassong.asm"
 SECTION "Song - undertale/megalovania", ROMX
 INCLUDE "audio/music/undertale/megalovania.asm"
 
+SECTION "Song - undertale/waterfall", ROMX
+INCLUDE "audio/music/undertale/waterfall.asm"
+
+SECTION "Song - deltarune/faintcourage", ROMX
+INCLUDE "audio/music/deltarune/faintcourage.asm"
+
+SECTION "Song - bluesky/carpet", ROMX
+INCLUDE "audio/music/bluesky/carpet.asm"
+
+SECTION "Song - kirby/zerotwo", ROMX
+INCLUDE "audio/music/kirby/zerotwo.asm"
+
+SECTION "Song - shovelknight/ironwhale", ROMX
+INCLUDE "audio/music/shovelknight/ironwhale.asm"
+
 ENDSECTION

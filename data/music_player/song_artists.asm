@@ -28,4 +28,7 @@ SongArtists:
 	li "NotFroggestSpirit"
 	li "Toby Fox"
 	li "ShinkoNetCavy,      ShockSlayer"
+	li "OxygenTheSmolAngel"
+	li "Jun Ishikawa"
+	li "Manami Matsumae"
 	assert_list_length NUM_SONG_ARTISTS

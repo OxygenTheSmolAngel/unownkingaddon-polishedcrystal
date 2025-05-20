@@ -72,14 +72,20 @@ RuinsOfAlphResearchCenterGetUnownDexScript:
 RuinsOfAlphResearchCenterScientist3Script:
 	faceplayer
 	opentext
+	readvar VAR_UNOWNCOUNT
 	checkevent EVENT_RUINS_OF_ALPH_CLIMAX_DONE
 	iftruefwd .Conclusion
-	readvar VAR_UNOWNCOUNT
 	ifequalfwd NUM_UNOWN, .PrinterAvailable
 	jumpopenedtext RuinsOfAlphResearchCenterScientist3Text
 
 .Conclusion:
-	jumpopenedtext RuinsofAlphResearchCenterScientistConclusionText
+	opentext
+	writetext RuinsofAlphResearchCenterScientistConclusionText
+	waitbutton
+	closetext
+	checkpoke UNOWN_KING
+	iftruefwd .UnownKingExtraEvent
+	end
 
 .PrinterAvailable:
 	writetext RuinsOfAlphResearchCenterScientist3_PrinterAvailable
@@ -130,6 +136,62 @@ RuinsOfAlphResearchCenterScientist3Script:
 	setevent EVENT_DO_RUINS_OF_ALPH_CLIMAX
 	pause 15
 	warpfacing DOWN, RUINS_OF_ALPH_OUTSIDE, 19, 18
+	end
+.UnownKingExtraEvent:
+	pause 5
+	showemote EMOTE_SHOCK, RUINSOFALPHRESEARCHCENTER_SCIENTIST3, 15
+	opentext
+	writetext RuinsOfAlphResearchCenterScientist3ExtraText
+	yesorno
+	iffalsefwd .Refused
+	special FadeOutPalettes
+	special Special_FadeOutMusic
+	pause 30
+	playmusic MUSIC_CARPET
+	opentext
+	writetext UnkiComesOutOfBall
+	cry UNOWN_KING
+	closetext
+	pause 15
+	opentext
+	writetext UnkiInspectionText
+	waitbutton
+	closetext
+	pause 15
+	cry UNOWN_KING
+	pause 5
+	opentext
+	writetext UnkiInspectionText2
+	waitbutton
+	closetext
+	pause 15
+	waitsfx
+	opentext
+	writetext UnkiInspectionText3
+	waitbutton
+	closetext
+	pause 30
+	cry UNOWN_KING
+	opentext
+	writetext UnkiConfusion
+	waitbutton
+	closetext
+	pause 50
+	special FadeInPalettes
+	special Special_FadeOutMusic
+	special RestartMapMusic
+	opentext
+	writetext UnkiInspectionEnd
+	waitbutton
+	closetext
+	verbosegiveitem BERSERK_GENE
+	end
+
+.Refused
+	opentext
+	writetext ExtraTextRefusal
+	waitbutton
+	closetext
 	end
 
 RuinsofAlphResearchCenterScientistStepAsideMovementData:
@@ -196,7 +258,6 @@ RuinsOfAlphResearchCenterScientist2Script:
 	jumpopenedtext RuinsOfAlphResearchCenterScientist2Text_FocusedOurStudies
 
 MapRuinsofAlphResearchCenterSignpost1Script:
-	setevent EVENT_UNKI_UNSEALED
 	opentext
 	checkevent EVENT_RUINS_OF_ALPH_RESEARCH_CENTER_SCIENTIST
 	iffalsefwd .SkipChecking
@@ -455,3 +516,132 @@ RuinsOfAlphResearchCenterAcademicBooksText:
 	line "Mysteries of the"
 	cont "Ancients…"
 	done
+
+RuinsOfAlphResearchCenterScientist3ExtraText:
+	text "W-Wait just a"
+	line "second!"
+
+	para "That #mon... It"
+	line "can't be..."
+
+	para "Is that the"
+	line "Unown King?"
+
+	para "The legendary"
+	line "ruler of Unown who"
+	cont "was lost to time?"
+
+	para "I can't believe "
+	line "it! The rumors"
+	cont "were really true!"
+
+	para "If it is okay, can"
+	line "I inspect this"
+	cont "#mon for a bit?"
+	done
+
+ExtraTextRefusal:
+	text "Hm. That is okay."
+
+	para "But please come"
+	line "back if you do"
+	cont "change your mind."
+	done
+
+UnkiComesOutOfBall:
+	text "You took the"
+	line "Unown King out"
+	cont "his Ball."
+	done
+
+UnkiInspectionText:
+	text "Wow... This is"
+	line "amazing..."
+
+	para "The Unown King in"
+	line "the flesh... This"
+	cont "is revolutionary."
+
+	para "All of those years"
+	line "researching these"
+	cont "ruins has led up"
+
+	para "to this."
+
+	para "I need to inspect"
+	line "this beast some"
+	cont "more..."
+	done
+
+UnkiInspectionText2:
+	text "Mmm..."
+	line "These claws are"
+	cont "surprisingly soft."
+
+	para "But those sharp"
+	line "fangs can dig into"
+	cont "anything..."
+
+	para "It feels surreal"
+	line "holding onto the"
+	cont "Unown King's"
+
+	para "most well-known"
+	line "features."
+	done
+
+UnkiInspectionText3:
+	text "Huh... This guy"
+	line "is a lot fatter"
+	cont "than how he is"
+
+	para "described in the"
+	line "rumors."
+
+	para "Makes sense,"
+	line "though."
+
+	para "Devouring many"
+	line "living beings"
+	cont "would definitely"
+
+	para "make him gain a"
+	line "few pounds."
+
+	para "Let me note this"
+	line "down real quick..."
+	done
+
+UnkiConfusion:
+	para "....."
+
+    para "The Unown King"
+    line "doesn't seem to be"
+    cont "used to this."
+    done
+
+UnkiInspectionEnd:
+	text "Phew... Sorry it"
+	line "took a while."
+
+	para "But with these new"
+	line "details about the"
+	cont "Unown King, we"
+
+	para "might be a step"
+	line "closer to"
+	cont "uncovering all"
+
+	para "of the Ruins of"
+	line "Alph's secrets."
+
+	para "Thank you so"
+	line "much for"
+	cont "contributing to"
+
+	para "our research."
+
+	para "Here, have this"
+	line "as thanks."
+	done
+
