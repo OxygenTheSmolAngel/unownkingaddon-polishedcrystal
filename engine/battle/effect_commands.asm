@@ -3303,7 +3303,7 @@ BattleCommand_posthiteffects:
 	call GetTrueUserAbility
 	cp MAGIC_GUARD
 	jr z, .rocky_helmet_done
-	predef SubtractHPFromUser
+	farcall SubtractHPFromUser_OverrideFaintOrder
 	call GetOpponentItem
 	call GetCurItemName
 	ld hl, BattleText_UserHurtByItem
@@ -3389,6 +3389,19 @@ BattleCommand_posthiteffects:
 	call BattleRandomRange
 	cp c
 	call c, FlinchTarget
+	ret
+
+CheckStatHerbsAfterIntimidate:
+	ld hl, wDeferredSwitch
+	ld a, [hl]
+	push af
+	push hl
+	ld [hl], 0
+	call CheckStatHerbs
+	farcall DeferredSwitch
+	pop hl
+	pop af
+	ld [hl], a
 	ret
 
 CheckEndMoveEffects:
@@ -5063,7 +5076,7 @@ SapHealth:
 	pop hl
 	farcall BeginAbility
 	farcall ShowEnemyAbilityActivation
-	predef SubtractHPFromUser
+	farcall SubtractHPFromUser_OverrideFaintOrder
 	ld hl, SuckedUpOozeText
 	call StdBattleTextbox
 	farjp EndAbility
