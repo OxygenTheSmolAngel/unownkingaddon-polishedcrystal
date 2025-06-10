@@ -362,13 +362,18 @@ AI_Smart_EffectHandlers:
 	dbw EFFECT_FLY,               AI_Smart_Fly
 	dbw EFFECT_ROOST,             AI_Smart_Roost
 	dbw EFFECT_TRICK_ROOM,        AI_Smart_TrickRoom
+	dbw EFFECT_NIGHTMARE,         AI_Smart_Nightmare
 	db -1 ; end
 
 AI_Smart_Sleep:
-; Greatly encourage sleep inducing moves if the enemy has Dream Eater.
+; Greatly encourage sleep inducing moves if the enemy has Dream Eater or Nightmare.
 ; 50% chance to greatly encourage sleep inducing moves otherwise.
 
 	ld b, EFFECT_DREAM_EATER
+	call AIHasMoveEffect
+	ret nc
+
+    ld b, EFFECT_NIGHTMARE
 	call AIHasMoveEffect
 	ret nc
 
@@ -1397,6 +1402,16 @@ AI_Smart_Defrost:
 rept 5
 	dec [hl]
 endr
+	ret
+
+AI_Smart_Nightmare:
+; 50% chance to encourage this move.
+; The AI_Basic layer will make sure that
+; Dream Eater is only used against sleeping targets.
+	; Discourage if redundant
+	call AI_50_50
+	ret c
+	dec [hl]
 	ret
 
 AI_Smart_Curse:

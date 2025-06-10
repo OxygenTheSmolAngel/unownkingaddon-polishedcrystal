@@ -2664,7 +2664,7 @@ endc
 	learnset 25, PSYBEAM
 	learnset 29, SUBSTITUTE
 	learnset 32, CONFUSE_RAY ; Recycle → egg move
-	learnset 36, TRICK
+	learnset 36, SKILL_SWAP
 	learnset 39, PSYCHIC_M
 	learnset 43, FUTURE_SIGHT ; Role Play → egg move
 	learnset 46, BATON_PASS
@@ -5345,7 +5345,7 @@ endc
 	learnset 25, PSYBEAM
 	learnset 29, SUBSTITUTE
 	learnset 32, CONFUSE_RAY ; Recycle → egg move
-	learnset 36, TRICK
+	learnset 36, SKILL_SWAP
 	learnset 39, PSYCHIC_M
 	learnset 43, FUTURE_SIGHT ; Role Play → egg move
 	learnset 46, BATON_PASS

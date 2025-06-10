@@ -145,7 +145,7 @@ MoveEffectsPointers:
 	dw Roost
 	dw CloseCombat
 	dw SkillSwap
-	dw Trick
+	dw Nightmare
 	dw KnockOff
 	dw BugBite
 	dw GyroBall

@@ -44,6 +44,7 @@ AI_Redundant:
 	dbw EFFECT_ROOST,         .Roost
 	dbw EFFECT_TRICK_ROOM,    .TrickRoom
 	dbw EFFECT_DESTINY_BOND,  .DestinyBond
+	dbw EFFECT_NIGHTMARE,     .Nightmare
 	db -1
 
 .Confuse:
@@ -189,6 +190,7 @@ AI_Redundant:
 	cp WEATHER_SUN
 	jr .InvertZero
 
+.Nightmare:
 .DreamEater:
 	ld a, [wBattleMonStatus]
 	and SLP_MASK

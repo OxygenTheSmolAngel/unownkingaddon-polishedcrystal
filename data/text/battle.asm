@@ -1263,6 +1263,12 @@ CantEscapeNowText:
 	line "can't escape now!"
 	prompt
 
+StartedNightmareText:
+	text "<TARGET>"
+	line "started to have a"
+	cont "NIGHTMARE!"
+	prompt
+
 WasDefrostedText:
 	text "<USER>"
 	line "was defrosted!"

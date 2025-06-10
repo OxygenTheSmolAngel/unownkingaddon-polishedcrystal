@@ -137,7 +137,7 @@ BattleCommandPointers:
 	command toxicspikes
 	command roost
 	command skillswap
-	command trick
+	command nightmare
 	command toxic
 	command gyroball
 	command checkpowder

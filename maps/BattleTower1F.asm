@@ -306,15 +306,19 @@ BattleTowerPharmacistScript:
 	iftruefwd BattleTowerTutorTrickScript
 	writethistext
 		text "The trainers here"
-		line "strategically use"
-		cont "held items."
+		line "may sometimes use"
+		cont "status conditions."
 
 		para "But I've got a"
 		line "trick up my"
-		cont "sleeve--I'll swap"
+		cont "sleeve--I'll put"
 
-		para "their items for"
-		line "mine with Trick!"
+		para "the opponent in a"
+		line "Nightmare, and"
+		cont "they will be"
+
+		para "tormented until"
+		line "they wake up!"
 		done
 	waitbutton
 	setevent EVENT_LISTENED_TO_TRICK_INTRO
@@ -323,7 +327,7 @@ BattleTowerTutorTrickScript:
 		text "I'll teach your"
 		line "#mon how to"
 
-		para "use Trick…"
+		para "use Nightmare…"
 		line "for a Silver Leaf."
 		done
 	waitbutton
@@ -332,11 +336,11 @@ BattleTowerTutorTrickScript:
 	writethistext
 		text "Should I teach"
 		line "your #mon"
-		cont "Trick?"
+		cont "Nightmare?"
 		done
 	yesorno
 	iffalsefwd .TutorRefused
-	setval TRICK
+	setval NIGHTMARE
 	writetext ClearText
 	special Special_MoveTutor
 	ifequalfwd $0, .TeachMove
@@ -356,8 +360,10 @@ BattleTowerTutorTrickScript:
 	takeitem SILVER_LEAF
 	jumpthisopenedtext
 		text "Now your #mon"
-		line "can use Trick too!"
-		cont "Isn't it devious?"
+		line "can use Nightmare"
+		cont "too!"
+
+		para "Isn't it scary?"
 		done
 
 Text_BattleTowerCooltrainerF:

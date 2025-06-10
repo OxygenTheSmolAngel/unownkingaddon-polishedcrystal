@@ -31,7 +31,7 @@ MoveDescriptions::
 	dw ToxicSpikesDescription
 	dw HeadbuttDescription
 	dw HornAttackDescription
-	dw TrickDescription
+	dw NightmareDescription
 	dw HexDescription
 	dw TackleDescription
 	dw BodySlamDescription
@@ -1250,7 +1250,7 @@ GyroBallDescription:
 	next "at lower speed."
 	done
 
-TrickDescription:
+NightmareDescription:
 	text "Swaps held items"
 	next "with the foe."
 	done

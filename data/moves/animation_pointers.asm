@@ -33,7 +33,7 @@ BattleAnimations::
 	fardw BattleAnim_ToxicSpikes
 	fardw BattleAnim_Headbutt
 	fardw BattleAnim_HornAttack
-	fardw BattleAnim_Trick
+	fardw BattleAnim_Nightmare
 	fardw BattleAnim_Hex
 	fardw BattleAnim_Tackle
 	fardw BattleAnim_BodySlam

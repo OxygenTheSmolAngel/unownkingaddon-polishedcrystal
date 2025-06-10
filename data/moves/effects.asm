@@ -1211,14 +1211,11 @@ SkillSwap:
 	skillswap
 	endmove
 
-Trick:
+Nightmare:
 	checkobedience
 	usedmovetext
 	doturn
-	hastarget
-	checkhit
-	checkpriority
-	trick
+	nightmare
 	endmove
 
 Conversion:

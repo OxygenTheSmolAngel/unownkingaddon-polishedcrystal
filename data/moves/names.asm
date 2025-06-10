@@ -30,7 +30,7 @@ MoveNames::
 	li "Toxic Spikes"
 	li "Headbutt"
 	li "Horn Attack"
-	li "Trick"
+	li "Nightmare"
 	li "Hex"
 	li "Tackle"
 	li "Body Slam"

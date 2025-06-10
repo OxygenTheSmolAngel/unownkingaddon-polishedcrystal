@@ -21,5 +21,5 @@ EncoreMoves:
 	db SUPER_FANG
 	db SWORDS_DANCE
 	db TELEPORT
-	db TRICK
+	db NIGHTMARE
 	db -1 ; end

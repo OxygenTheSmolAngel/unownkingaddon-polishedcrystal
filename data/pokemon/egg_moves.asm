@@ -732,7 +732,6 @@ SentretEggSpeciesMoves:
 	db REVERSAL
 	db SLASH
 	db DOUBLE_EDGE
-	db TRICK
 	db $ff
 
 HoothootEggSpeciesMoves:
@@ -1205,7 +1204,7 @@ MimeJrEggSpeciesMoves:
 	db FUTURE_SIGHT
 	db HYPNOSIS
 	db NASTY_PLOT
-	db TRICK
+	db SKILL_SWAP
 	db $ff
 
 HappinyEggSpeciesMoves:

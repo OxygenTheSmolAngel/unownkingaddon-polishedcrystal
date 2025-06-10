@@ -111,7 +111,7 @@ TMHMMoves:
 	db SUCKER_PUNCH ; MT25 (Scary Cave)
 	db SWAGGER      ; MT26 (Celadon City)
 	db THUNDERPUNCH ; MT27 (Goldenrod City)
-	db TRICK        ; MT28 (Battle Tower)
+	db NIGHTMARE    ; MT28 (Battle Tower)
 	db TRICK_ROOM   ; MT29 (Route 16 South Gate)
 	db ZAP_CANNON   ; MT30 (Power Plant)
 	db ZEN_HEADBUTT ; MT31 (Saffron City)

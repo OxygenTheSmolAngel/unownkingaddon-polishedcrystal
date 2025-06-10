@@ -65,7 +65,7 @@ INCLUDE "engine/battle/move_effects/thief.asm"
 INCLUDE "engine/battle/move_effects/thunder.asm"
 INCLUDE "engine/battle/move_effects/transform.asm"
 INCLUDE "engine/battle/move_effects/tri_attack.asm"
-INCLUDE "engine/battle/move_effects/trick.asm"
+INCLUDE "engine/battle/move_effects/nightmare.asm"
 INCLUDE "engine/battle/move_effects/trick_room.asm"
 INCLUDE "engine/battle/move_effects/triple_kick.asm"
 INCLUDE "engine/battle/move_effects/toxic.asm"
@@ -283,6 +283,8 @@ BattleCommand_checkturn:
 	call CallBattleCore
 	ld a, $1
 	ldh [hBGMapMode], a
+	ld hl, wPlayerSubStatus1
+    res SUBSTATUS_NIGHTMARE, [hl]
 	jr .not_asleep
 
 .fast_asleep

@@ -6244,25 +6244,17 @@ BattleAnim_GigaImpact:
 	anim_wait 16
 	anim_ret
 
-BattleAnim_Trick:
-	anim_1gfx ANIM_GFX_STATUS
-	anim_clearopponenthud
-	anim_bgeffect ANIM_BG_SHOW_MON, $0, $0, $0
-	anim_sound 0, 1, SFX_GET_COIN_FROM_SLOTS
-	anim_obj ANIM_OBJ_TRICK, 90, 68, $18
-	anim_obj ANIM_OBJ_TRICK, 90, 68, $38
-	anim_wait 16
-.loop
-	anim_sound 0, 1, SFX_STOP_SLOT
-	anim_wait 32
-	anim_loop 4, .loop
-	anim_wait 7
-	anim_sound 0, 1, SFX_SLOT_MACHINE_START
-	anim_incobj 1
-	anim_incobj 2
-	anim_wait 6
-	anim_clearobjs
-	anim_wait 6
+BattleAnim_Nightmare:
+	anim_1gfx ANIM_GFX_ANGELS
+	anim_sound 0, 0, SFX_BUBBLE_BEAM
+	anim_obj ANIM_OBJ_IN_NIGHTMARE,   8, 4,  10, 0, $0
+	anim_1gfx ANIM_GFX_ANGELS
+	anim_sound 0, 0, SFX_BUBBLE_BEAM
+	anim_obj ANIM_OBJ_IN_NIGHTMARE,   8, 4,  10, 0, $0
+	anim_1gfx ANIM_GFX_ANGELS
+	anim_sound 0, 0, SFX_BUBBLE_BEAM
+	anim_obj ANIM_OBJ_IN_NIGHTMARE,   8, 4,  10, 0, $0
+	anim_wait 40
 	anim_ret
 
 BattleAnim_StatUp:

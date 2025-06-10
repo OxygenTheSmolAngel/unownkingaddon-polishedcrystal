@@ -28,5 +28,5 @@ StallMoves:
 	db SUBSTITUTE
 	db SWORDS_DANCE
 	db TRANSFORM
-	db TRICK
+	db NIGHTMARE
 	db -1 ; end
