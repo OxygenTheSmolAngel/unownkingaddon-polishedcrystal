@@ -1462,6 +1462,16 @@ UnownkingMini::     INCBIN "gfx/minis/unownking.2bpp.lz"
 UnownkingMiniMask:: INCBIN "gfx/minis/unownking_mask.1bpp.lz"
 UnownkingIcon::     INCBIN "gfx/icons/unownking.2bpp.lz"
 
+SECTION "Unownking Classic Mini Icon", ROMX
+UnownkingClassicMini::    INCBIN "gfx/minis/unownking_drawing.2bpp.lz"
+UnownkingClassicMiniMask: INCBIN "gfx/minis/unownking_drawing_mask.1bpp.lz"
+UnownkingClassicIcon::    INCBIN "gfx/icons/unownking_drawing.2bpp.lz"
+
+SECTION "Celebi Lost Mini Icon", ROMX
+CelebiLostMini::     INCBIN "gfx/minis/celebi_lost.2bpp.lz"
+CelebiLostMiniMask:: INCBIN "gfx/minis/celebi_lost_mask.1bpp.lz"
+CelebiLostIcon::     INCBIN "gfx/icons/celebi_lost.2bpp.lz"
+
 SECTION "UnownB Mini Icon", ROMX
 UnownBMini::     INCBIN "gfx/minis/unown_b.2bpp.lz"
 UnownBMiniMask:: INCBIN "gfx/minis/unown_b_mask.1bpp.lz"
@@ -1821,13 +1831,3 @@ SECTION "UrsalunaBloodmoon Mini Icon", ROMX
 UrsalunaBloodmoonMini::     INCBIN "gfx/minis/ursaluna_bloodmoon.2bpp.lz"
 UrsalunaBloodmoonMiniMask:: INCBIN "gfx/minis/ursaluna_bloodmoon_mask.1bpp.lz"
 UrsalunaBloodmoonIcon::     INCBIN "gfx/icons/ursaluna_bloodmoon.2bpp.lz"
-
-SECTION "Unownking Classic Mini Icon", ROMX
-UnownkingClassicMini::    INCBIN "gfx/minis/unownking_drawing.2bpp.lz"
-UnownkingClassicMiniMask: INCBIN "gfx/minis/unownking_drawing_mask.1bpp.lz"
-UnownkingClassicIcon::    INCBIN "gfx/icons/unownking_drawing.2bpp.lz"
-
-SECTION "Celebi Lost Mini Icon", ROMX
-CelebiLostMini::     INCBIN "gfx/minis/celebi_lost.2bpp.lz"
-CelebiLostMiniMask:: INCBIN "gfx/minis/celebi_lost_mask.1bpp.lz"
-CelebiLostIcon::     INCBIN "gfx/icons/celebi_lost.2bpp.lz"

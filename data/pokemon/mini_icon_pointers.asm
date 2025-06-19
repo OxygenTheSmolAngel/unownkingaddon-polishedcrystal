@@ -298,10 +298,6 @@ MiniIconPointers:
 	mini_icon Unownking
 	assert_table_length NUM_SPECIES
 
-	mini_icon UnownkingClassic
-
-	mini_icon CelebiLost
-
 	mini_icon UnownB
 	mini_icon UnownC
 	mini_icon UnownD
@@ -342,6 +338,10 @@ MiniIconPointers:
 	mini_icon Pikachu ; Spark
 
 	mini_icon Pichu ; Spiky
+
+	mini_icon UnownkingClassic ; Classic
+
+	mini_icon CelebiLost ; Lost
 
 rept NUM_MAGIKARP - 1
 	mini_icon Magikarp

@@ -177,6 +177,7 @@ VermilionGymBadgeGuy:
 	verbosegiveitem BOTTLE_CAP
 	iffalse_endtext
 	setevent EVENT_GOT_BOTTLE_CAP_FROM_VERMILION_GUY
+	warp SHAMOUTI_ISLAND, 21, 14
 	writetext VermilionCityBadgeGuyBattleEdgeText
 	waitendtext
 

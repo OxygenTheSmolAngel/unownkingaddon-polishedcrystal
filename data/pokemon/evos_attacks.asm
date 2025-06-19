@@ -2897,6 +2897,7 @@ endc
 	evo_data EVOLVE_LOCATION, ICE_PATH, GLACEON
 	evo_data EVOLVE_HAPPINESS, TR_MORNDAY, ESPEON
 	evo_data EVOLVE_HAPPINESS, TR_EVENITE, UMBREON
+	evo_data EVOLVE_MOVE, DRAINING_KISS, SYLVEON
 	learnset 1, GROWL
 	learnset 1, TACKLE
 	learnset 1, LEER ; Tail Whip → similar move
@@ -2908,6 +2909,7 @@ endc
 	learnset 20, HEAL_BELL ; Refresh → HGSS tutor move
 	learnset 23, THIEF ; Covet → TM move
 	learnset 25, TAKE_DOWN
+	learnset 28, DRAINING_KISS
 	learnset 29, CHARM
 	learnset 33, BATON_PASS
 	learnset 37, DOUBLE_EDGE
