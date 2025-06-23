@@ -106,7 +106,6 @@ Route29RefusedTutorial:
 	sjump Route29FinishTutorial
 
 Route29CooltrainerMScript:
-	clearevent EVENT_FISHER_SAVED
 	checktime (1 << EVE) | (1 << NITE)
 	iftrue_jumptextfaceplayer Text_WaitingForMorning
 	jumptextfaceplayer Text_WaitingForNight
